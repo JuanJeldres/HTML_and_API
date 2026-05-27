@@ -1,0 +1,61 @@
+#contenedorCV {
+    border: dotted;
+    padding: 15px;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
+h4{
+    text-decoration: underline;
+}
+p{
+    text-align: justify;
+}
+
+#titlecontacto{ /* margen del CONTACTO: */
+    margin-bottom: 0px;
+}
+
+.lista{
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img {
+    border-radius: 800px;
+}
+
+#contacto ul li a{
+    text-decoration-color: rgb(104, 104, 104);
+}
+
+#contacto ul li a:hover {
+    color: green
+    
+}
+
+#contenedorlinkedin{
+    border: black;
+    margin-bottom: 10px;
+}
+
+/* .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+}
+    
+
+#contenedorgithub {
+    grid-row-start: 2;
+} */
