@@ -1,4 +1,4 @@
-const tareaInput = document.querySelector('#tarea');
+/*const tareaInput = document.querySelector('#tarea');
 const botonPost = document.querySelector('#btn-post');
 const contenedorTareas = document.querySelector('#contenedor-post');
 const botonEliminar1 = document.getElementById("eliminarTarea1")
@@ -89,7 +89,7 @@ function agregarTarea(){
  
         return;
     }
-}
+} */
 
 /*     //codigo valentina
      // Crear div tarea
@@ -133,3 +133,34 @@ function agregarTarea(){
     // Limpiar input
     input.value = ""; */
  
+// I A
+const tareaInput = document.querySelector('#tarea');
+const botonPost = document.querySelector('#btn-post');
+
+const tareas = document.querySelectorAll('.tareaCreada p');
+
+let contador = 0;
+
+botonPost.addEventListener('click', function(e){
+
+    e.preventDefault();
+
+    const nuevaTarea = tareaInput.value.trim();
+
+    if(nuevaTarea === ""){
+        alert("Escribe una tarea");
+        return;
+    }
+
+    if(contador < tareas.length){
+
+        tareas[contador].textContent = nuevaTarea;
+
+        contador++;
+    }
+    else{
+        alert("Ya no quedan espacios disponibles");
+    }
+
+    tareaInput.value = "";
+});
